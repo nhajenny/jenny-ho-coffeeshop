@@ -8,7 +8,7 @@ header {
 nav.header__container {
     display: flex;
     align-items: center;
-    gap: 58rem;
+    gap: 60%;
 }
 
 .header_card-left {
