@@ -7,7 +7,7 @@ header {
 nav.header__container {
     display: flex;
     align-items: center;
-    gap: 55%;
+    gap: 58%;
 }
 .header_card-left {
     display: flex;
@@ -22,7 +22,8 @@ nav.header__container {
 }
 .header__card-right {
    display: flex;
-   align-items: center;  
+   align-items: center; 
+   justify-content: flex-end; 
 }
 .header__nav--linktext{
     margin: 0;
