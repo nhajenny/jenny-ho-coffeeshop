@@ -7,7 +7,7 @@ header {
 nav.header__container {
     display: flex;
     align-items: center;
-    gap: 60%;
+    gap: 55%;
 }
 .header_card-left {
     display: flex;
@@ -63,11 +63,11 @@ nav.header__container {
 .title-box-border {
     position: absolute;
     content: '';
-    width: 18.75rem;
-    height: 12.5rem;
+    width: 18rem;
+    height: 12rem;
     border: 5px solid #5BACC3;
-    bottom: 10px;
-    right: 10px;
+    bottom: 15px;
+    right: 15px;
 }
 
 
