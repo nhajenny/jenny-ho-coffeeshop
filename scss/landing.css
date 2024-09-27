@@ -179,7 +179,7 @@ nav.header__container {
 
 .main__coffeebean_card-img {
   max-width: 100%;
-  padding: 1rem;
+  padding: 1.2rem;
   position: relative;
   top: 3%;
 }
@@ -192,8 +192,7 @@ nav.header__container {
   top: 2.5%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  gap: 0.938rem;
+  justify-content: space-between;
 }
 
 .main__coffeebean_card-bottom-left {
@@ -201,6 +200,7 @@ nav.header__container {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding: 1rem;
 }
 
 .main__coffeebean_card-bottom-title {
@@ -214,6 +214,8 @@ nav.header__container {
 
 .main__coffeebean_card-bottom-right {
   display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
 }
 
 .main__coldbrew_card {
@@ -242,8 +244,7 @@ nav.header__container {
   top: 2.5%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  gap: 0.938rem;
+  justify-content: space-between;
 }
 
 .main__coldbrew_card-bottom-left {
@@ -251,6 +252,7 @@ nav.header__container {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding: 1rem;
 }
 
 .main__coldbrew_card-bottom-title {
@@ -264,6 +266,8 @@ nav.header__container {
 
 .main__coldbrew_card-bottom-right {
   display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
 }
 
 .main__inhousebrew_card {
@@ -292,8 +296,7 @@ nav.header__container {
   top: 5.75%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  gap: 0.938rem;
+  justify-content: space-between;
 }
 
 .main__inhousebrew-bottom-left {
@@ -301,6 +304,7 @@ nav.header__container {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding: 1rem;
 }
 
 .main__inhousebrew_card-bottom-title {
@@ -314,6 +318,8 @@ nav.header__container {
 
 .main__inhousebrew_card-bottom-right {
   display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
 }
 
 .main__button-card {
@@ -435,9 +441,9 @@ nav.header__container {
   position: absolute;
   border: 5px solid #5BACC3;
   width: 25rem;
-  height: 25rem;
+  height: 24.5rem;
   bottom: 1rem;
-  left: 5.5rem;
+  right: 5.5rem;
 }
 
 .section__discount-card {

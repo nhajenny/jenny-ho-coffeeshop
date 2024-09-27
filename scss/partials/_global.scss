@@ -5,8 +5,11 @@ $graphite: #393939;
 $gray: #909090;
 $light-gray:#F7F7F7;
 $white:#FFF;
-//variables-font
+//variables-font related items
 $font: 'Open Sans';
+$bold: 700;
+$regular: 400;
+$light: 300;
 
 //mixins
 @mixin flex-center {
@@ -14,6 +17,13 @@ $font: 'Open Sans';
     justify-content: center;
     align-items: center;
 }
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+       
+
+
 @mixin product-card {
     width: 20.625rem;
     height: 27.5rem;
@@ -33,7 +43,7 @@ $font: 'Open Sans';
 
 body {
     font-family: $font;
-    font-weight: 400;
+    font-weight: $regular;
     margin:0;
     padding:0;
     text-decoration: none;
@@ -41,26 +51,26 @@ body {
 }
 h1, h2 {
     font-family: $font;
-    font-weight: 300;
+    font-weight: $light;
     font-size: 3.75rem;
 }
 
 h3 {
     font-family: $font;
-    font-weight: 300;
+    font-weight: $light;
     font-size: 2.063rem;
 }
 
 .nav__link {
     font-family: $font;
-    font-weight: 400;
+    font-weight: $regular;
     font-size: 1.3125rem;
     padding: 10px; 
 }
 
 p {
     font-family: $font;
-    font-weight: 400;
+    font-weight: $regular;
     font-size: 1.125rem;
 }
 
@@ -70,12 +80,12 @@ p {
 .main__cards-price {
     color: $nitro-blue;
     font-size: 2.063rem;
-    font-weight: 700;
+    font-weight: $bold;
     margin: auto;
 }
 
 .footer_heading {
     font-family: $font;
-    font-weight: 300;
+    font-weight: $light;
     font-size: 2.063rem;
 }

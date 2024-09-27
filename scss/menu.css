@@ -64,7 +64,7 @@ nav.header__container {
 
 .header_card-left {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
@@ -130,7 +130,7 @@ nav.header__container {
 }
 
 .section__introduction-text {
-  color: #fff;
+  color: #FFF;
 }
 
 .section__navbar-container {
