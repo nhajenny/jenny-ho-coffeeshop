@@ -1,5 +1,8 @@
+//use partials 
+@use './partials/global' as *;
+
 header {
-    background-color: #FFF0ED;
+    background-color: $nitro-pink;
     width: 100%;
     padding-bottom: 0.625rem;
     padding-top: 0.625rem;
@@ -34,11 +37,11 @@ nav.header__container {
 }
 
 .nav-shopnow {
-    color: #5BACC3;
+    color: $nitro-blue;
 }
 
 .section__intro-container {
-    background-color: #FFF0ED;
+    background-color: $nitro-pink;
     padding: 1rem;
     width: 100%;
     box-sizing: border-box;
@@ -60,15 +63,13 @@ nav.header__container {
 }
 
 .section__button-shop {
-    background-color: #5BACC3;
-    color: #fff;
-    font-family: 'Open Sans';
+    background-color: $nitro-blue;
+    color: $white;
+    font-family: $font;
     font-weight: 400;
     font-size: 1.313rem;
-    width: 11.25rem;
-    text-align: center;
-    padding: 1rem;
     position: relative;
+    @include button-size;
 }
 .section__button-shop-link{
     text-decoration: none;
@@ -76,7 +77,7 @@ nav.header__container {
 }
 .section__button-shop-border {
     position: absolute;
-    border: 2px solid #393939;
+    border: 2px solid $graphite;
     width: 13rem;
     height: 3.5rem;
     bottom: 0.422rem;
@@ -88,7 +89,7 @@ nav.header__container {
     margin-right: 6.25rem;
 }
 .main__background {
-    background-color: #F7F7F7;
+    background-color: $light-gray;
 }
 .main__title-text {
     margin: 0px;
@@ -105,14 +106,7 @@ nav.header__container {
     flex-direction: row;
 }
 .main__coffeebean_card{
-    width: 20.625rem;
-    height: 27.5rem;
-    border-radius: 0.625rem;
-    box-shadow: 0 5px 9px -1px;
-    box-shadow: rgba(0, 0, 0, 0.25);
-    text-align: center;
-    box-sizing: border-box;
-    overflow: hidden;
+    @include product-card;
     
 }
 .main__coffeebean_card-img {
@@ -122,7 +116,7 @@ nav.header__container {
     top: 3%;
 }
 .main__coffeebean_card-bottom {
-    background-color:#FFF0ED;
+    background-color:$nitro-pink;
     height: 35%;
     box-sizing: border-box;
     position: relative;
@@ -144,7 +138,7 @@ nav.header__container {
     margin: 0;
 }
 .main__coffeebean_card-bottom-descr{
-    color: #909090;
+    color: $gray;
     margin: 0;
 
 }
@@ -153,14 +147,7 @@ nav.header__container {
 }
 
 .main__coldbrew_card {
-    width: 20.625rem;
-    height: 27.5rem;
-    border-radius: 0.625rem;
-    box-shadow: 0 5px 9px -1px;
-    box-shadow: rgba(0, 0, 0, 0.25);
-    text-align: center;
-    box-sizing: border-box;
-    overflow: hidden;
+ @include product-card;
 }
 
 .main__coldbrew_card-img {
@@ -170,7 +157,7 @@ nav.header__container {
     top: 3%;
 }
 .main__coldbrew_card-bottom {
-    background-color:#FFF0ED;
+    background-color:$nitro-pink;
     height: 35%;
     box-sizing: border-box;
     position: relative;
@@ -192,7 +179,7 @@ nav.header__container {
     margin: 0;
 }
 .main__coldbrew_card-bottom-descr{
-    color: #909090;
+    color: $gray;
     margin: 0;
 
 }
@@ -201,13 +188,7 @@ nav.header__container {
 }
 
 .main__inhousebrew_card {
-    width: 20.625rem;
-    height: 27.5rem;
-    border-radius: 0.625rem;
-    box-shadow: 0 5px 9px -1px;
-    box-shadow: rgba(0, 0, 0, 0.25);
-    text-align: center;
-    overflow: hidden;
+    @include product-card;
 }
 
 .main__inhousebrew_card-img {
@@ -217,7 +198,7 @@ nav.header__container {
     top: 3%;
 }
 .main__inhousebrew_card-bottom {
-    background-color:#FFF0ED;
+    background-color:$nitro-pink;
     height: 35%;
     box-sizing: border-box;
     position: relative;
@@ -239,7 +220,7 @@ nav.header__container {
     margin: 0;
 }
 .main__inhousebrew_card-bottom-descr{
-    color: #909090;
+    color: $gray;
     margin: 0;
 
 }
@@ -248,33 +229,30 @@ nav.header__container {
 }
 
 .main__button-card {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   @include flex-center;
    margin: 1.25rem;
    padding-top: 2.5rem;
    padding-bottom: 3.75rem;
    position: relative;
 }
 .main__button-view {
-    background-color: #5BACC3;
-    color: #fff;
-    border: solid #5BACC3 2px;
-    font-family: 'Open Sans';
+    background-color: $nitro-blue;
+    color: $white;
+    border: solid $nitro-blue 2px;
+    font-family: $font;
     font-weight: 400;
     font-size: 1.313rem;
-    width: 11.25rem;
-    text-align: center;
-    padding: 1rem;
     margin: auto;
     position: relative;
+    @include button-size;
+
 }
 .main__button-view--link {
     text-decoration: none;
 } 
 .main__button-view-border {
     position: absolute; 
-    border: 2px solid #393939;
+    border: 2px solid $graphite;
     width: 13.25rem;
     height: 3.7rem;
     bottom: 0.438rem;
@@ -282,7 +260,7 @@ nav.header__container {
 }
 .section__descr-container {
     display: flex;
-    background-color: #fff;
+    background-color: $white;
     padding: 1.25rem;
     align-items: center;
 }
@@ -308,22 +286,20 @@ nav.header__container {
 }
 
 .section__descr-button {
-    background-color: #5BACC3;
-    color: #fff;
-    border: solid #5BACC3 2px;
-    font-family: 'Open Sans';
+    background-color: $nitro-blue;
+    color: $white;
+    border: solid $nitro-blue 2px;
+    font-family: $font;
     font-weight: 400;
     font-size: 1.313rem;
-    width: 11.25rem;
-    text-align: center;
-    padding: 1rem;
     margin-top: 2rem;
     text-decoration: none;
     position: relative;
+    @include button-size;
 }
 .section__descr-button-border {
     position: absolute; 
-    border: 2px solid #393939;
+    border: 2px solid $graphite;
     width: 13.25rem;
     height: 3.7rem;
     bottom: 0.438rem;
@@ -334,11 +310,9 @@ nav.header__container {
     width: 50%;
     height: 26.25rem;
     box-sizing: border-box;
-    display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     position: relative;
+    @include flex-center;
 }
 .section__descr-bckgr-img {
     width: 25rem;
@@ -351,38 +325,37 @@ nav.header__container {
 }
 .section__descr-img-border {
     position: absolute;
-    border: 5px solid #5BACC3;
+    border: 5px solid $nitro-blue;
     width: 25rem;
     height: 25rem;
-    bottom: 1.25rem;
-    left: 3.125rem;
+    bottom: 1rem;
+    left: 5.5rem;
 }
 
 .section__discount-card {
-    background-color: #fff;
+    background-color: $white;
     width: 100%;
     height: 21.875rem;
-    display: flex;
-    justify-content: center;
+    @include flex-center;
 }  
 .section__discount-banner--text {
-    font-family: 'Open Sans';
+    font-family: $font;
     font-weight: 400;
     font-size: 2.813rem;
     padding: 1.25rem;
     margin: auto;
 }
 .section__discount-banner {
-    background-color: #393939;
+    background-color: $graphite;
     width: 90%;
-    color: #fff;
+    color: $white;
     text-align: center;
     padding: 0.625rem 0.625rem;
     margin: auto;
 
 }
 .footer-area {
-    background-color: #FFF0ED;
+    background-color: $nitro-pink;
     width:100%;
     overflow-x:hidden;
 }

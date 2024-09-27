@@ -1,0 +1,196 @@
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 3.75rem;
+}
+
+h3 {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 2.063rem;
+}
+
+.nav__link {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.3125rem;
+  padding: 10px;
+}
+
+p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.price {
+  color: #5BACC3;
+}
+
+.main__cards-price {
+  color: #5BACC3;
+  font-size: 2.063rem;
+  font-weight: 700;
+  margin: auto;
+}
+
+.footer_heading {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 2.063rem;
+}
+
+header {
+  background-color: #FFF0ED;
+  width: 100%;
+  padding-bottom: 0.625rem;
+  padding-top: 0.625rem;
+}
+
+nav.header__container {
+  display: flex;
+  align-items: center;
+  gap: 58%;
+}
+
+.header_card-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__img {
+  width: 50px;
+  margin: 0;
+  position: relative;
+  top: 2px;
+}
+
+.header__card-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header__nav--linktext {
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-shopnow {
+  color: #5BACC3;
+}
+
+.section__introduction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-introduction {
+  background-image: url(../assets/images/coffee-circle.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 43.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.title-box {
+  background-color: #393939;
+  width: 18.75rem;
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.title-box-border {
+  position: absolute;
+  content: "";
+  width: 18rem;
+  height: 12rem;
+  border: 5px solid #5BACC3;
+  bottom: 15px;
+  right: 15px;
+}
+
+.section__introduction-text {
+  color: #fff;
+}
+
+.section__navbar-container {
+  background-color: #393939;
+  width: 100%;
+  height: 5rem;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__navbar-card {
+  box-sizing: border-box;
+  display: flex;
+}
+
+.section__navbar-text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.3125rem;
+  border-left: 4px solid #5BACC3;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  color: #FFF;
+  text-decoration: none;
+}
+
+#hotdrinks_card {
+  background-color: #FFF0ED;
+  text-align: center;
+  margin: auto;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  margin: auto;
+}
+
+#colddrinks_card {
+  background-color: #F7F7F7;
+  text-align: center;
+  margin: auto;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  margin: auto;
+}
+
+#pastries_card {
+  background-color: #FFF0ED;
+  text-align: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  margin: auto;
+}
+
+.description {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.125rem;
+  font-style: italic;
+  width: 33%;
+  margin: auto;
+}/*# sourceMappingURL=menu.css.map */
