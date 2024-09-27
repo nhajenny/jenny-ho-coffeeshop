@@ -17,7 +17,7 @@ nav.header__container {
     align-items: center;
 }
 .header__img {
-    width: 50px;
+    width: 3.125rem;
     margin: 0;
     position: relative;
     top: 2px;
@@ -39,13 +39,16 @@ nav.header__container {
 
 .section__intro-container {
     background-color: #FFF0ED;
-    padding: 1.25rem;
+    padding: 1rem;
     width: 100%;
     box-sizing: border-box;
     display: flex;
+    flex-direction: row;
 }
 .section__intro-card {
     margin-left: 9.375rem;
+    display: flex;
+    flex-direction: column;
 }
 .section__intro-title {
     text-align: left;
@@ -53,26 +56,36 @@ nav.header__container {
 }
 .section__intro-text {
     text-align: left;
-    width: 30%;
+    width: 50%;
+}
+
+.section__button-shop {
+    background-color: #5BACC3;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 1.313rem;
+    width: 11.25rem;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+.section__button-shop-link{
+    text-decoration: none;
+    position: relative;
+}
+.section__button-shop-border {
+    position: absolute;
+    border: 2px solid #393939;
+    width: 13rem;
+    height: 3.5rem;
+    bottom: 0.422rem;
+    right: 0.563rem;
+    
 }
 .section__intro-img {
     padding: 1.25rem;
     margin-right: 6.25rem;
-}
-.section__button-shop {
-    background-color: #5BACC3;
-    color: #fff;
-    border: solid #5BACC3 2px;
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 1.313rem;
-    width: 180px;
-    text-align: center;
-    padding: 1rem;
-    margin: auto;
-}
-.section__button-shop-link{
-    text-decoration: none;
 }
 .main__background {
     background-color: #F7F7F7;
@@ -117,7 +130,7 @@ nav.header__container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 15px;
+    gap: 0.938rem;
 }
 
 .main__coffeebean_card-bottom-left {
@@ -165,7 +178,7 @@ nav.header__container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 15px;
+    gap: 0.938rem;
 }
 
 .main__coldbrew_card-bottom-left {
@@ -212,7 +225,7 @@ nav.header__container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 15px;
+    gap: 0.938rem;
 }
 
 .main__inhousebrew-bottom-left {
@@ -239,8 +252,9 @@ nav.header__container {
    justify-content: center;
    align-items: center;
    margin: 1.25rem;
-   padding-top: 40px;
-   padding-bottom: 60px;
+   padding-top: 2.5rem;
+   padding-bottom: 3.75rem;
+   position: relative;
 }
 .main__button-view {
     background-color: #5BACC3;
@@ -249,18 +263,27 @@ nav.header__container {
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 1.313rem;
-    width: 180px;
+    width: 11.25rem;
     text-align: center;
     padding: 1rem;
     margin: auto;
+    position: relative;
 }
 .main__button-view--link {
     text-decoration: none;
 } 
+.main__button-view-border {
+    position: absolute; 
+    border: 2px solid #393939;
+    width: 13.25rem;
+    height: 3.7rem;
+    bottom: 0.438rem;
+    right: 0.5rem;
+}
 .section__descr-container {
     display: flex;
     background-color: #fff;
-    padding: 20px;
+    padding: 1.25rem;
     align-items: center;
 }
 .section__descr-container-left {
@@ -268,6 +291,7 @@ nav.header__container {
     flex-direction: column;
     justify-content: center;
     margin-left: 10%;
+    position: relative;
 }
 .section__descr-title {
     margin: 0;
@@ -277,10 +301,10 @@ nav.header__container {
 }
 .section__descr-img-card {
     display: flex;
-    gap: 150px;
+    gap: 9.375rem;
 }
 .section__descr-logo {
-    width: 50px;
+    width: 3.125rem;
 }
 
 .section__descr-button {
@@ -290,36 +314,54 @@ nav.header__container {
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 1.313rem;
-    width: 180px;
+    width: 11.25rem;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
     text-decoration: none;
+    position: relative;
+}
+.section__descr-button-border {
+    position: absolute; 
+    border: 2px solid #393939;
+    width: 13.25rem;
+    height: 3.7rem;
+    bottom: 0.438rem;
+    right: 0.5rem;
 }
 
 .section__descr-container-right {
     width: 50%;
-    height: 420px;
+    height: 26.25rem;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .section__descr-bckgr-img {
-    width: 400px;
-    padding-top:20px;
+    width: 25rem;
+    padding-top:1.25rem;
+    position: relative;
 }
 .section__decr-img-can {
-    height:280px;
-    translate: -275px;
-    width: auto;
+    height: 17.5rem;
+    position: absolute;
+}
+.section__descr-img-border {
+    position: absolute;
+    border: 5px solid #5BACC3;
+    width: 25rem;
+    height: 25rem;
+    bottom: 1.25rem;
+    left: 3.125rem;
 }
 
 .section__discount-card {
     background-color: #fff;
     width: 100%;
-    height: 350px;
+    height: 21.875rem;
     display: flex;
     justify-content: center;
 }  
@@ -341,17 +383,29 @@ nav.header__container {
 }
 .footer-area {
     background-color: #FFF0ED;
+    width:100%;
+    overflow-x:hidden;
 }
 .footer__container {
     display: flex;
-    column-gap: 80px;
+    column-gap: 5rem;
     justify-content: space-evenly;
-    align-items: center;
-    
+    align-items: center; 
+    position:relative;
+    width:100%;
 }
+.footer__img-bean-left{
+    opacity: 25%;
+    width: 7.5rem;
+    position: absolute;
+    bottom: 6.25rem;
+    right: 14.375rem;
+}
+
 .footer__card-address{
     padding: 1.25rem;
     margin: 1.25rem;
+    position: relative;
 }
 .footer__card-hours{
     padding: 1.25rem;
@@ -360,6 +414,15 @@ nav.header__container {
 .footer__card-social{
     padding: 1.25rem;
     margin: 1.25rem;
+    position: relative;
+    width: auto; 
+}
+.footer__img-bean-right{
+    position: absolute;
+    opacity: 25%;
+    width: 7.5rem;
+    top: 6.875rem;
+    left: 15rem;
 }
 
 .footer-area__links {
