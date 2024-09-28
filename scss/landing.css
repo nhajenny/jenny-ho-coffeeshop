@@ -122,6 +122,7 @@ nav.header__container {
   font-weight: 400;
   font-size: 1.313rem;
   position: relative;
+  z-index: 1;
   width: 11.25rem;
   text-align: center;
   padding: 1rem;
@@ -137,8 +138,15 @@ nav.header__container {
   border: 2px solid #393939;
   width: 13rem;
   height: 3.5rem;
-  bottom: 0.422rem;
-  right: 0.563rem;
+  bottom: 0.4rem;
+  right: 0.3rem;
+  z-index: 3;
+  transition-duration: 0.1s;
+}
+
+.section__button-shop-border:active {
+  position: absolute;
+  transform: translate(0.3rem, 0.4rem);
 }
 
 .section__intro-img {
@@ -341,6 +349,7 @@ nav.header__container {
   font-size: 1.313rem;
   margin: auto;
   position: relative;
+  z-index: 1;
   width: 11.25rem;
   text-align: center;
   padding: 1rem;
@@ -353,10 +362,17 @@ nav.header__container {
 .main__button-view-border {
   position: absolute;
   border: 2px solid #393939;
-  width: 13.25rem;
-  height: 3.7rem;
-  bottom: 0.438rem;
-  right: 0.5rem;
+  width: 13.35rem;
+  height: 3.875rem;
+  bottom: 0.25em;
+  right: 0.25rem;
+  z-index: 3;
+  transition-duration: 0.1s;
+}
+
+.main__button-view-border:active {
+  position: absolute;
+  transform: translate(0.3975rem, 0.49rem);
 }
 
 .section__descr-container {
@@ -404,15 +420,22 @@ nav.header__container {
   width: 11.25rem;
   text-align: center;
   padding: 1rem;
+  z-index: 1;
 }
 
 .section__descr-button-border {
   position: absolute;
   border: 2px solid #393939;
-  width: 13.25rem;
-  height: 3.7rem;
-  bottom: 0.438rem;
-  right: 0.5rem;
+  width: 13.35rem;
+  height: 3.85rem;
+  bottom: 0.2rem;
+  right: 0.2rem;
+  z-index: 3;
+}
+
+.section__descr-button-border:active {
+  position: absolute;
+  transform: translate(0.3rem, 0.4rem);
 }
 
 .section__descr-container-right {
@@ -430,11 +453,7 @@ nav.header__container {
   width: 25rem;
   padding-top: 1.25rem;
   position: relative;
-}
-
-.section__decr-img-can {
-  height: 17.5rem;
-  position: absolute;
+  z-index: 0;
 }
 
 .section__descr-img-border {
@@ -444,8 +463,30 @@ nav.header__container {
   height: 24.5rem;
   bottom: 1rem;
   right: 5.5rem;
+  z-index: 0;
 }
 
+.section__descr-img-can {
+  height: 17.5rem;
+  position: absolute;
+  z-index: 3;
+}
+
+.section__descr-img-can:hover {
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate 0deg;
+  }
+  to {
+    transform: rotate 360deg;
+  }
+}
 .section__discount-card {
   background-color: #FFF;
   width: 100%;
@@ -470,8 +511,32 @@ nav.header__container {
   text-align: center;
   padding: 0.625rem 0.625rem;
   margin: auto;
+  animation-name: flashing-color;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
+@keyframes flashing-color {
+  0% {
+    background-color: #393939;
+  }
+  20% {
+    bakcground-color: #2d5661;
+  }
+  40% {
+    background-color: #519aaf;
+  }
+  60% {
+    background-color: #5BACC3;
+  }
+  80% {
+    background-color: #519aaf;
+  }
+  100% {
+    bakcground-color: #2d5661;
+  }
+}
 .footer-area {
   background-color: #FFF0ED;
   width: 100%;
