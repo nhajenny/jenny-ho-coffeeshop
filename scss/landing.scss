@@ -46,22 +46,28 @@ nav.header__container {
     width: 100%;
     box-sizing: border-box;
     display: flex;
+    justify-content: center;
     flex-direction: row;
+    gap: 0;
 }
 .section__intro-card {
     margin-left: 9.375rem;
+    margin-top: 5rem;
     @include flex-column;
+    
 }
 .section__intro-title {
     text-align: left;
-    margin-bottom: 0;
+    margin-bottom:10px;
 }
 .section__intro-text {
     text-align: left;
-    width: 50%;
+    width: 70%;
+    margin-bottom:1rem;
 }
 
 .section__button-shop {
+    margin-top:1rem;
     background-color: $nitro-blue;
     color: $white;
     font-family: $font;
@@ -89,9 +95,14 @@ nav.header__container {
     position: absolute;
     transform: translate(0.3rem, 0.4rem);
 }
+.section__intro-card-right {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 .section__intro-img {
+    display: flex;
     padding: 1.25rem;
-    margin-right: 6.25rem;
 }
 .main__background {
     background-color: $light-gray;
